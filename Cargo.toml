@@ -1,0 +1,23 @@
+[package]
+name = "turbo_copy"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Multi-threaded directory walking
+jwalk = "0.8"
+eframe = "0.27"
+rfd = "0.14"
+
+# Concurrency primitives & CPU detection
+crossbeam-channel = "0.5"
+num_cpus = "1.16"
+
+# File metadata and timestamps preservation
+filetime = "0.2"
+
+# Terminal progress bar UI
+indicatif = "0.17"
+
+# CLI argument parsing
+clap = { version = "4.4", features = ["derive"] }
